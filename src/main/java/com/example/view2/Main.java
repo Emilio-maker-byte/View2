@@ -61,10 +61,10 @@ public class Main extends Application {
 
     int jump = 0;
 
-    File f = new File("C:/Users/emili/OneDrive/Desktop/RotatingCube.mp4");
-    Media m = new Media(f.toURI().toURL().toString());
-    MediaPlayer player = new MediaPlayer(m);
-    MediaView view = new MediaView(player);
+//    File f = new File("C:/Users/emili/OneDrive/Desktop/RotatingCube.mp4");
+//    Media m = new Media(f.toURI().toURL().toString());
+//    MediaPlayer player = new MediaPlayer(m);
+//    MediaView view = new MediaView(player);
 
     //camera rotation
 //    double cameraXRotation = 0;
@@ -90,15 +90,15 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws Exception {
 
-        player.setAutoPlay(true);
-        player.setCycleCount(MediaPlayer.INDEFINITE);
-
-        view.setPreserveRatio(true);
-//        view.setFitHeight(50);
-        view.setFitWidth(250);
-
-//        view.setX(30);
-        view.setY(0);
+//        player.setAutoPlay(true);
+//        player.setCycleCount(MediaPlayer.INDEFINITE);
+//
+//        view.setPreserveRatio(true);
+////        view.setFitHeight(50);
+//        view.setFitWidth(250);
+//
+////        view.setX(30);
+//        view.setY(0);
 
         //Create a 3D Camera
         PerspectiveCamera camera = new PerspectiveCamera(true);
@@ -330,7 +330,7 @@ public class Main extends Application {
         text.setY(20);
         text.setX(20);
         shapeGroup.getChildren().add(text);
-        shapeGroup.getChildren().add(view);
+//        shapeGroup.getChildren().add(view);
 
         testScene.setCursor(Cursor.NONE);
 
